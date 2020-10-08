@@ -323,7 +323,7 @@ p {
 }
 
 /* Mobile */
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .name {
     max-width: 100%;
     text-align: center;
