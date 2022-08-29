@@ -1,10 +1,117 @@
+* {
+    --colorMidBlue: #54556e;
+    --colorDarkBlue: #40415a;
+    --colorDarkerBlue: #383952;
+    --colorMidGrey: #aaaab8;
+    --colorMidMonoGrey: #7f7f7f;
+    --colorLightGrey: #e3e3e3;
+    --colorLtMidGrey: #c8c8d0;
+    --colorMidFadedGrey: rgba(255, 255, 255, 0.7);
+    --colorDarkGreyBase: #2f2f32;
+    --colorBlueGrey: #808196;
+    --colorRed: #d55161;
+    --colorRedHover: #c14857;
+    --colorOrange: #f99a66;
+    --colorPurple: #a973a2;
+    --colorGreen: #7bc8a4;
+    --colorDarkGreen: #2a8b9d;
+    --colorTeal: #69c9cd;
+    --colorYellow: #e6c653;
+    --colorBlack: #000;
+    --colorBlackMidGrey: #3a3a3a;
+    --colorBlackDarkGrey: #202020;
+    --colorFb: #355ca7;
+    --colorTwitter: #00a7ea;
+    --colorDarkGrey: var(--colorDarkGreyBase);
+    --colorBg: #fff;
+    --colorHeader: var(--colorDarkBlue);
+    --colorBoxTitle: var(--colorBlueGrey);
+    --colorTextContrast: #fff;
+    --colorTextContrastSubtle: #fff;
+    --colorBtnContrast: #fff;
+    --colorBtnInverse: #fff;
+    --colorLink: var(--colorMidBlue);
+    --colorUrl: var(--colorMidBlue);
+    --colorTermLink: var(--colorMidBlue);
+    --colorBgMain: var(--colorMidBlue);
+    --colorScoreContainer: var(--colorMidBlue);
+    --colorBgSecond: var(--colorDarkBlue);
+    --colorBgThird: var(--colorLightGrey);
+    --colorBgTabs: #fff;
+    --colorTabHighlight: var(--colorMidBlue);
+    --colorTabTextHighlight: var(--colorRed);
+    --colorIcon: var(--colorLightGrey);
+    --colorTabText: var(--colorMidBlue);
+    --colorTabTextUnselected: var(--colorMidBlue);
+    --colorNewsText: var(--colorMidBlue);
+    --colorSortCircle: var(--colorLightGrey);
+    --colorSortCircleMiddle: #fff;
+    --colorTopTabText: #fff;
+    --colorBgTopTabs: var(--colorDarkBlue);
+    --colorLine: var(--colorLightGrey);
+    --colorField: #fff;
+    --colorFieldFooter: var(--colorMidGrey);
+    --colorFieldIcon: var(--colorMidGrey);
+    --colorHint: var(--colorMidGrey);
+    --colorCommentContainer: var(--colorLightGrey);
+    --colorUnselectable: var(--colorLightGrey);
+    --colorImgBg: var(--colorLightGrey);
+    --colorSubtitle: var(--colorLtMidGrey);
+    --colorBtnHighlight: var(--colorRed);
+    --colorBtnSelectable: var(--colorMidGrey);
+    --colorBtnText: #fff;
+    --colorBtnBgOne: var(--colorRed);
+    --colorBtnBgTwo: var(--colorMidBlue);
+    --colorBtnBgThree: var(--colorDarkBlue);
+    --colorBtnBgFour: var(--colorOrange);
+    --colorBtnFb: var(--colorFb);
+    --colorBtnTwitter: var(--colorTwitter);
+    --colorNotif: var(--colorGreen);
+    --colorModalBg: var(--colorMidBlue);
+    font-size: 16px;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 90vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: aliceblue;
     background-color: #2f2f32;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--colorGreen);
+    font-weight: 600;
+    padding: 10px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    max-width: 60vw;
+    text-align: center;
+    font-size: 25px;
 }
